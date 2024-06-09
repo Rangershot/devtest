@@ -1,0 +1,57 @@
+﻿
+sudo so apt update yes / upgrade
+
+%First sample
+a=[2 3;7 8]
+b=[2;7]
+a*b
+
+
+%----------------
+%Second Sample
+
+
+a=[12 8;4 3]
+b=[5 9; 2 7]
+a.*b
+
+%-----------------
+%Third Sample
+
+
+a=[12 8;4 3]
+b=[5 9; 2 7]
+a./b
+
+%-----------------
+%Fourth Sample
+
+n = input('Please insert one number : ');
+
+A = ones(n);
+
+disp(A);
+
+%----------------
+%Fifth Sample
+
+n = input('Please insert one number : ');
+A = zeros(n);
+disp(A);
+
+%---------------
+%Sixth Sample
+
+n = input('Please insert one number : ');
+
+A = magic(n);
+
+disp(A);
+
+%------------------
+
+%seventh Sample rasme shekle ba maghadire 1 va 0 
+n = input('Please insert one number : ');
+combined_matrix = ones(n) .* randi([0, 1], n);
+disp(combined_matrix);
+imshow(combined_matrix, 'InitialMagnification', 'fit');
